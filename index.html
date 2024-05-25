@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./leon.css">
+    <link rel="stylesheet" href="./bootstrap-4.0.0-dist (1)/css/bootstrap.css">
+    <title>Crud project</title>
+</head>
+<body style="background-color: #222;">
+    <!-- start the head title -->
+    <div class="container text-center theTop " >
+        <h2 style="font-weight: 700;">CRUD</h2>
+        <h3>product management system</h3>
+    </div>
+    <div class="container text-center">
+<input type="text" placeholder="title" class="title" style="width: 100%;" id="title" >
+<!-- End the head title -->
+
+    </div>
+    <!-- start four inputs -->
+    <div class="container">
+<div class="row flex-four">
+<div class="col-lg-3 clo-md-6 col-sm-12">
+    <input type="number" onkeyup="gettotal()" placeholder="price"style="margin-left: 40px;" class="number1" id="price"  >
+</div>
+<div class="col-lg-3 clo-md-6 col-sm-12">
+    <input type="number" onkeyup="gettotal()" placeholder="taxes"style="margin-left: 40px;" class="number1"  id="taxes" >
+</div>
+<div class="col-lg-3 clo-md-6 col-sm-12">
+    <input type="number" onkeyup="gettotal()" placeholder="ads" style="margin-left: 40px;" class="number1" id="ads" >
+</div>
+<div class="col-lg-2 clo-md-6 col-sm-12 end" >
+    <input type="number" onkeyup="gettotal()" placeholder="discount" class="number1" id="discount" >
+</div>
+<div class="col-1">
+   <small style="background-color: rgb(176, 37, 37);" class="total" id="small"></small>
+   <!--  -->
+</div>
+</div>
+<!-- End four inputs -->
+<!-- start two inputs+ pigbutton -->
+<div class="container">
+    <div class="row under">
+        <div class="col-11">
+            <input type="text" placeholder="count" class="number2" id="count" >
+
+        </div>
+        <div class="col-11">
+            <input type="text" placeholder="category" class="number2" id="category" >
+
+        </div>
+        <div class="col-10 text-center">
+           <button class="btn botn" style="margin-left: 100px;" id="btnpapa">Create</button>
+
+        </div>
+        <div class="col-11">
+            <input type="text" onkeyup="searchDATA(this.value)" placeholder="search" class="number2"  id="search">
+
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row  text-center">
+    <div class="col-lg-5 col-sm-12">
+        <button class=" botn2" onclick=" SEARCH(this.id)" style="margin-left:120px;" id="searchbytitle">Search by</button>
+    </div>
+    <div class="col-lg-5 col-sm-12">
+        <button class=" botn2" onclick=" SEARCH(this.id)" style="margin-left:120px;" id="searchcategory">Search by category</button>
+    </div>
+</div>
+</div>
+<!-- The end -->
+
+<!-- The start table -->
+
+<div class="container">
+    <table class="table  "  style="margin-top: 20px; ">
+        <div id="DELETEALL">
+        </div>
+
+
+        <thead class="thead-helo col-12">
+          <tr>
+            <th scope="col" style="color: #fff;">ID</th>
+            <th scope="col" style="color: #fff;">TITLE</th>
+            <th scope="col" style="color: #fff;">PRICE</th>
+            <th scope="col" style="color: #fff;">ADS</th>
+            <th scope="col" style="color: #fff;">DISCOUNT</th>
+            <th scope="col" style="color: #fff;">TOTAL</th>
+            <th scope="col" style="color: #fff;">CATEGORY</th>
+            <th scope="col" >UPDATE</th>
+            <th scope="col" >DELETE</th>
+          </tr>
+        </thead>
+    <tbody id="tbody">
+        
+    
+      
+        </tbody>
+      </table>
+      
+     
+  
+  </div>
+
+
+<!-- the end table -->
+
+ 
+
+
+
+<script src="bootstrap-4.0.0-dist (1)/js/popper.min.js"></script>
+<script src="./bootstrap-4.0.0-dist (1)/js/jquery-3.7.1.min.js"></script>
+<script src="./json.js"></script>
+</body>
+</html>

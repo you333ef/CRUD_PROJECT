@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+font-family: sans-serif;
+width: 100%;
+
+}
+.theTop{
+    margin-top: 10px;
+}
+.theTop h2{
+    color: #fff;
+    font-weight: 600;
+    
+}
+.theTop h3{
+    color: #fff;
+    font-weight: 500;
+}
+.title{
+    margin-top: 20px;
+    padding: 3px;
+    background-color: #111;
+    outline: none;
+    border: 1px solid black ;
+    color: azure;
+    border-radius: 7px;
+}
+.four{
+    margin-top: 20px;
+    
+}
+.number1{
+    background-color: #111;
+    color: azure;
+    padding: 3px;
+    padding: 2px;
+    border: 1px solid black ;
+    width: 95%;
+    margin-left: 8px;
+    padding-left: 3px;
+    outline: none;
+    position: relative;
+   
+}
+.flex-four{
+    margin-top: 20px;
+}
+.total{
+    border-radius: 3px;
+    padding: 3px;
+    color: #fff;
+    position: absolute;
+   left: -4px;
+  
+   
+}
+.end{
+    width: 80%;
+}
+.number2{
+    background-color: #111;
+    color: azure;
+    padding: 3px;
+    padding: 2px;
+    border: 1px solid black ;
+    width: 100%;
+    margin-left: 15px;
+    padding-left: 3px;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 7px;
+    padding-left: 8px;
+    
+
+    
+}
+.under{
+    margin-top: 15px;
+    
+}
+/* 
+#470053
+*/
+.botn{
+background-color: #470053;
+color: #fff;
+width: 90%;
+margin-top: 10px;
+margin-left: 70px;
+
+
+}
+.botn2{
+    background-color: #470053;
+    color: #fff;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+    
+}
+.thead-dark{
+    background-color: #111;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.total::before{
+    content: "Total:";
+}
+td{
+   color: #fff;
+}
+th{
+    color: #fff;
+}
+ td button{
+    background-color: #470053;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+}
+.Handmade{
+    background-color: #470053;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    margin-left: 120px;
+    width: 70%;
+    border-radius: 15px;
+    font-weight: 500;
+
+}
+.DELETEALL{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 50px;
+  
+    
+}
+.Handmade:hover{
+   background-color: #6c0d7d;
+   letter-spacing: 1.1mm;
+   transition: 3s;
+}
